@@ -1,0 +1,44 @@
+﻿<Window x:Class="face_0827.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:face_0827"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+        <Label Content="URL:" HorizontalAlignment="Left" Height="29" Margin="19,20,0,0" VerticalAlignment="Top" Width="45" Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" FontSize="14"/>
+        <TextBox x:Name="text_url" HorizontalAlignment="Left" Height="25" Margin="69,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="371" TextChanged="TextBox_TextChanged" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" FontSize="14"/>
+        <Image x:Name="img" HorizontalAlignment="Left" Height="308" Margin="19,69,0,0" VerticalAlignment="Top" Width="421"/>
+        <Button x:Name="btn_enter" Content="enter" HorizontalAlignment="Left" Height="50" Margin="471,24,0,0" VerticalAlignment="Top" Width="114" BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="16" Click="btn_enter_Click"/>
+        <Button x:Name="btn_identify" Content="identify" HorizontalAlignment="Left" Height="50" Margin="471,95,0,0" VerticalAlignment="Top" Width="114" BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="16" Click="btn_identify_Click"/>
+        <Button x:Name="btn_showPics" Content="show pics" HorizontalAlignment="Left" Height="121" Margin="613,24,0,0" VerticalAlignment="Top" Width="109" BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="16" Click="btn_showPics_Click"/>
+        <Label Content="detect info:" HorizontalAlignment="Left" Margin="512,184,0,0" VerticalAlignment="Top" Height="28" Width="98" Background="#00000000" Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" FontSize="14"/>
+        <Label Content="gender:&#xD;&#xA;" HorizontalAlignment="Left" Margin="523,217,0,0" VerticalAlignment="Top" Height="38" Width="65" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" FontSize="14"/>
+        <TextBlock x:Name="text_gender" HorizontalAlignment="Left" Height="22" Margin="593,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" FontSize="14">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <Label Content="age:&#xA;" HorizontalAlignment="Left" Margin="523,255,0,0" VerticalAlignment="Top" Height="33" Width="65" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" FontSize="14"/>
+        <TextBlock x:Name="text_age" HorizontalAlignment="Left" Height="22" Margin="593,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" FontSize="14">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <Label Content="name:" HorizontalAlignment="Left" Margin="523,293,0,0" VerticalAlignment="Top" Height="27" Width="65" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" FontSize="14"/>
+        <TextBlock x:Name="text_name" HorizontalAlignment="Left" Height="22" Margin="593,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" FontSize="14">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <Button x:Name="btn_enter_train" Content="train" HorizontalAlignment="Left" Height="77" Margin="684,268,0,0" VerticalAlignment="Top" Width="109" BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="16" Click="btn_train_Click" Visibility="Hidden"/>
+        <Label Content="confidence:" HorizontalAlignment="Left" Margin="495,340,0,0" VerticalAlignment="Top" Height="27" Width="93" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" FontSize="14"/>
+        <TextBlock x:Name="text_confidence" HorizontalAlignment="Left" Height="22" Margin="593,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" FontSize="14">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+    </Grid>
+</Window>

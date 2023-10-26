@@ -1,0 +1,15 @@
+﻿<Window x:Class="face_0827.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:face_0827"
+        mc:Ignorable="d"
+        Title="Window2" Height="169.169" Width="572.843">
+    <Grid>
+        <Label Content="name:" HorizontalAlignment="Left" Height="29" Margin="39,43,0,0" VerticalAlignment="Top" Width="59" Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" FontSize="14"/>
+        <TextBox x:Name="inputName_textbox" HorizontalAlignment="Left" Height="29" Margin="120,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
+        <Button x:Name="btn_createPerson" Content="create" HorizontalAlignment="Left" Height="77" Margin="420,27,0,0" VerticalAlignment="Top" Width="109" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" FontSize="16" Click="btn_create_Click"/>
+        <Label x:Name="create_text" Content="" HorizontalAlignment="Left" Height="29" Margin="53,84,0,0" VerticalAlignment="Top" Width="338" Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" FontSize="14"/>
+    </Grid>
+</Window>
